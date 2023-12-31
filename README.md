@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Over the last year I have written REST APIs with various technologies and wanted to compare some of them. I created 5 identical clients in different technologies. I tested them on the simplest endpoint `/get` which simply returns a `Hello World` text message.
+Over the last year I have written REST APIs with various technologies and wanted to compare some of them. I created 5 identical clients with Elysia, Express, Rocket, Phoenix and Flask. I tested them on the simplest endpoint `/get` which returns a `"Hello World"` text message.
 
 Each tested locally on a 2023 Macbook Air M2.
 
@@ -13,7 +13,7 @@ I used [Ali](https://github.com/nakabonne/ali) for generating 10000 requests per
 ### Node, JavaScript, Express
 
 - Node: 20.5.1
-- express: 4.18.2
+- Express: 4.18.2
 
 ### Bun, TypeScript, Elysia
 
@@ -53,7 +53,7 @@ Above are the most interesting results from all the runs. You can see whole repo
 
 ### Rust
 
-Rust with Rocket is clearly and unsurprisingly a winner with Elysia and Bun not that far behind.
+Rust with Rocket is clearly and unsurprisingly a winner. Rocket still is quite some time away from the 1.0 release but it already should be production ready.
 
 ### JS/TS Bun Node
 
@@ -86,4 +86,4 @@ To generate a regular phoenix project the following command is used:
 I had to use this one:
 `mix phx.new --no-ecto --no-assets --no-dashboard --no-html --no-live --no-mailer`
 
-It might work great for bigger projects but for this experiment it is an overkill.
+It might work great for bigger projects but for this experiment it was an overkill.
